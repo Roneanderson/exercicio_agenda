@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contatos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <img src="./imagem/agenda.png" alt="Agenda">
+        <h1>Agenda de contatos</h1>
+        </header>
+    <form id="form-contato">
+        <input type="text" required placeholder="Digite o nome" id="nome_usuario" />
+        <input type="number" maxlength="11" required placeholder="Digite o contato" id="contato-usuario" />
+        <button type="submit">Cadastrar +</button> 
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome do usúario</th>
+                <th>Número do contato</th>
+                <th>Realizado</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>resultado do cadastro</td>
+                <td><span id="resultado-final-valor">---</span></td>
+                <td><span id="resultado-final">---</span></td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
